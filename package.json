@@ -1,0 +1,22 @@
+{
+  "name": "vue3",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev:reactivity": "bun scripts/dev.ts reactivity -f global",
+    "dev:shared": "bun scripts/dev.ts shared -f global"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "esbuild": "^0.25.4",
+    "minimist": "^1.2.8"
+  }
+}
