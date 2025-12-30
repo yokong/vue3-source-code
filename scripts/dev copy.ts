@@ -22,11 +22,11 @@ const pkg = require(resolve(__dirname, `../packages/${target}/package.json`));
 const outputFormat = format.startsWith("global")
   ? "iife"
   : format.startsWith("cjs")
-  ? "cjs"
-  : "esm";
+    ? "cjs"
+    : "esm";
 const outputFile = resolve(
   __dirname,
-  `../packages/${target}/dist/${target}.${format}.js`
+  `../packages/${target}/dist/${target}.${format}.js`,
 );
 
 build({
